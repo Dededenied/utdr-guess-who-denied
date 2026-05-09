@@ -17,13 +17,13 @@ if [ ! -z $TAURI ]; then
   mkdir build
   cp -r public build/
 
-  CHARSET_DIR=$ROOT_DIR/build/public/character-sets
+  CHARSET_DIR=$ROOT_DIR/tbuild/public/character-sets
   cd $CHARSET_DIR
 
   for DIRNAME in *; do
 
     # Skip any files in this directory
-    if [[ -f $DIRNAME || "$DIRNAME" == "build" ]]; then
+    if [[ -f $DIRNAME ]]; then
       continue
     fi
 

@@ -4,8 +4,6 @@
   "version": "1.0.1",
   "identifier": "com.wearsnomask.utdr-guess-who",
   "build": {
-    "beforeDevCommand": "TAURI=true ./scripts/make-meta.sh",
-    "beforeBuildCommand": "TAURI=true ./scripts/make-meta.sh",
     "frontendDist": "../build/public"
   },
   "app": {
